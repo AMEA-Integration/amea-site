@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AMEA Integration</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #002244, #004466);
+      color: white;
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    .logo span {
+      font-family: 'Brush Script MT', cursive;
+      font-weight: normal;
+      font-size: 0.6em;
+      display: block;
+      margin-top: -10px;
+    }
+
+    .slogan {
+      font-size: 1.4em;
+      font-style: italic;
+      margin-top: 20px;
+      color: #aad8f1;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      color: #004466;
+      margin-top: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .icon {
+      margin-right: 8px;
+      color: #004466;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background-color: #004466;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #006699;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <div class="logo">
+      AMEA
+      <span>Integration</span>
+    </div>
+    <div class="slogan">
+      Simplifying complexity—expert engineering for faster growth, leaner operations, and smarter decisions.
+    </div>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <h2><i class="fas fa-circle-info icon"></i>About Us</h2>
+    <p><strong>AMEA Integration</strong> is an engineering and project management firm based in Dallas-Fort Worth, Texas. We specialize in helping small manufacturing businesses improve productivity, reduce costs, and integrate new technologies—even if they don’t have an internal engineering team.</p>
+  </section>
+
+  <section id="services" data-aos="fade-up">
+    <h2><i class="fas fa-toolbox icon"></i>What We Do</h2>
+    <p>Whether you're an entrepreneur scaling a food product, a small manufacturer planning your next expansion, or a facility manager searching for a trusted industrial mechanical contractor—AMEA Integration is built around your needs.</p>
+    <h3><i class="fas fa-hard-hat icon"></i> Engineering & Project Management</h3>
+    <ul>
+      <li>Full-service mechanical and process engineering</li>
+      <li>Project management from design to execution</li>
+      <li>Plant upgrades and automation layouts</li>
+    </ul>
+    <h3><i class="fas fa-utensils icon"></i> Food Process & Startup Support</h3>
+    <ul>
+      <li>From kitchen to production-ready layout</li>
+      <li>Sanitary design & FDA compliance</li>
+      <li>Batch process scaling & equipment selection</li>
+    </ul>
+    <h3><i class="fas fa-sitemap icon"></i> Multidisciplinary Teams</h3>
+    <p>We build your team—from mechanical and civil to HVAC and food safety experts—for turnkey solutions.</p>
+    <h3><i class="fas fa-chart-line icon"></i> Expansion & Automation Planning</h3>
+    <ul>
+      <li>Operational assessments</li>
+      <li>Scalable facility expansion support</li>
+      <li>Smart technology integration</li>
+    </ul>
+  </section>
+
+  <section id="industries" data-aos="fade-up">
+    <h2><i class="fas fa-industry icon"></i>Industries We Serve</h2>
+    <p>We help entrepreneurs, plant managers, and project owners bring ideas to life. Whether you're scaling a product, upgrading a plant, or tackling a capital project, we bring clarity to complexity.</p>
+    <ul>
+      <li><strong>Manufacturing:</strong> Reduce inefficiencies, upgrade layouts, boost productivity</li>
+      <li><strong>Food Startups:</strong> Scale recipes, meet FDA standards, plan for growth</li>
+      <li><strong>Healthcare Projects:</strong> Minimize risk, manage lead times, support HVAC & facility upgrades</li>
+    </ul>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2><i class="fas fa-envelope icon"></i>Contact Us</h2>
+    <p>Email: <a href="mailto:contact@ameaintegration.com">contact@ameaintegration.com</a><br>
+       Phone: (555) 123-4567</p>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer data-aos="fade-in">
+    <p>&copy; 2025 AMEA Integration — Optimizing process, transforming spaces.</p>
+    <p>
+      <a href="#about">About</a> |
+      <a href="#services">Services</a> |
+      <a href="#industries">Industries</a> |
+      <a href="#contact">Contact</a>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
