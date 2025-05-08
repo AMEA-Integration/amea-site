@@ -1,0 +1,157 @@
+# Insert the updated index.html content with Mission and Vision added under About Us
+updated_index_html_with_mission_vision = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AMEA Integration</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #002244, #004466);
+      color: white;
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+    .logo {
+      font-size: 3em;
+      font-weight: bold;
+    }
+    .logo span {
+      font-family: 'Brush Script MT', cursive;
+      font-weight: normal;
+      font-size: 0.6em;
+      display: block;
+      margin-top: -10px;
+    }
+    .slogan {
+      font-size: 1.4em;
+      font-style: italic;
+      margin-top: 20px;
+      color: #aad8f1;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 5px;
+    }
+    h3 {
+      color: #004466;
+      margin-top: 20px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .icon {
+      margin-right: 8px;
+      color: #004466;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      padding: 10px 20px;
+      background-color: #004466;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #006699;
+    }
+    footer {
+      background: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <div class="logo">
+      AMEA
+      <span>Integration</span>
+    </div>
+    <div class="slogan">
+      Simplifying complexity—expert engineering for faster growth, leaner operations, and smarter decisions.
+    </div>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <h2><i class="fas fa-circle-info icon"></i>About Us</h2>
+    <p><strong>AMEA Integration</strong> is an engineering and project management firm based in Dallas-Fort Worth, Texas. We specialize in helping small manufacturing businesses improve productivity, reduce costs, and integrate new technologies—even if they don’t have an internal engineering team.</p>
+    <h3><i class="fas fa-bullseye icon"></i>Our Mission</h3>
+    <p>We simplify the complex. Our mission is to eliminate the guesswork for small manufacturers by delivering hands-on engineering and construction solutions that boost efficiency, reduce waste, and accelerate growth. We make technical support feel personal—so you can focus on what you do best, while we optimize the process behind the scenes. With AMEA, transformation isn’t hard—it’s smart, fast, and custom-fit to your needs.</p>
+    <h3><i class="fas fa-eye icon"></i>Our Vision</h3>
+    <p>To be the most trusted technical partner for small manufacturers ready to grow—by transforming how they work, without slowing them down. We envision a future where every business, no matter its size, has access to elite-level engineering and automation—without the high overhead. At AMEA, we believe you shouldn’t have to be big to build something great.</p>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2><i class="fas fa-envelope icon"></i>Contact Us</h2>
+    <p>Email: <a href="mailto:contact@ameaintegration.com">contact@ameaintegration.com</a><br>
+       Phone: (555) 123-4567</p>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer data-aos="fade-in">
+    <p>&copy; 2025 AMEA Integration — Optimizing process, transforming spaces.</p>
+    <p>
+      <a href="#about">About</a> |
+      <a href="#services">Services</a> |
+      <a href="#industries">Industries</a> |
+      <a href="#contact">Contact</a>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
+"""
+
+# Save updated HTML to file
+file_path = "/mnt/data/index_with_mission_vision.html"
+with open(file_path, "w") as f:
+    f.write(updated_index_html_with_mission_vision)
+
+file_path
